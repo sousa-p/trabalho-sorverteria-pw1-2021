@@ -1,0 +1,291 @@
+/*
+O recurso filter: sepia(), foi usado.
+
+Este recurso serve para você passar um numero entre os colchetes, quanto maior o número, mais filtro(sepia) é adicionado, quanto menor, menos filtro(sepia) é adicionado 
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: Courier, monospace;
+}
+
+footer, main, header, nav{
+    min-width: 200px;
+}
+
+body{
+    background-color: #d7d5d6;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: #3a2017;
+}
+
+.header ul{
+    margin-right: 9.5%;
+    position: relative;
+    top: 25px;
+}
+
+.header ul li{
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+.header ul li a{
+    color: #e4e4e4;
+    font-size: 1.25em;
+    font-weight: 555;
+    transition: all 0.3s linear;
+}
+
+nav ul li, .header ul li{
+    display: inline-block;
+}
+
+.logo{
+    width: 65px;
+    height: 65px;
+}
+
+.header .logo{
+    margin-left: 10%;
+    margin-top: 0.5vh;
+}
+
+/* Navegação */
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: #835a39;
+    flex-wrap: wrap;
+    border-top: 2px solid #5f412f;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+nav ul{
+    width: 80%;
+    position: relative;
+    top: 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+nav ul li{
+    padding-right: 15px;
+    padding-left: 10px;
+    border-right: 1px solid #5f412f;
+}
+
+nav ul li:last-child, #no-border{
+    border: none;
+}
+
+nav ul li a{
+    color: #e4e4e4;
+    font-size: 1.125em;
+    font-weight: 555;
+    transition: all 0.3s linear;
+}
+
+nav ul li a:hover, .header ul li a:hover{
+    color: #c2c2c2;
+}
+
+.direita{
+    float: right;
+}
+
+#carrinho ion-icon{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 7px;
+}
+
+#item5{
+    border-left: 1px solid #5f412f;
+    padding-left: 20px;
+}
+
+
+/* footer */
+
+.footer{
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 23vh;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    background-color: #3a2017;
+}
+
+.footer .logo{
+    margin-left: 9.5%;
+    margin-right: 5%;
+}
+
+.footer section{
+    display: flex;
+    width: 60%;
+    text-align: center;
+    color:#e4e4e4;
+}
+
+.footer section .first-text{
+    padding-right: 20px;
+    border-right: 1px solid #5f412f;
+}
+
+.footer section .second-text{
+    padding-left: 20px;
+    display: flex;
+}
+
+.footer ul{
+    float: right;
+    position: relative;
+    left: 5%;
+}
+
+.footer ul li{
+    margin: 0 auto;
+}
+
+.footer ul li a{
+    font-size: 1.25em;
+    color: #835a39;
+    transition: all 0.3s linear;
+}
+
+#icone1:hover{
+    color: #FF0000;
+}
+
+#icone2:hover{
+    color: rgb(50, 75, 200);
+}
+
+#icone3:hover{
+    color: blueviolet;
+}
+
+#icone4:hover{
+    color: #0084b4;
+}
+
+/* Tablet */
+@media(max-width: 830px){
+
+    .header{
+        height: 100px;
+        display: block;
+    }
+    .header ul{
+        margin: 0;
+        padding-left: 0;
+    }
+
+    nav{
+        min-height: 250px;
+    }
+
+    nav ul{
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 0 0 14px 0;
+        border-right: none;
+    }
+
+    nav ul li:first-child{
+        padding-top: 0;
+        border-top: none;
+    }
+
+    nav .direita{
+        float: none;
+    }
+
+
+    nav ul li a{
+        font-size: 1.25em;
+    }
+
+    #item5{
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .footer{
+        display: block;
+        height: 250px;
+    }
+
+    .footer img{
+        margin: 10px;
+    }
+
+    .footer section{
+        width: 90%;
+        margin: 10px;
+        font-size: 0.85em;
+    }
+
+    .footer ul{
+        display: flex;
+        float: none;
+        width: 80%;
+        margin-top: 20px;
+        font-size: 1.15em;
+    }
+}
+
+/* Celular */
+@media (max-width: 350px){
+    .header{
+        height: 200px;
+    }
+
+    .direita{
+        float: none;
+    }
+
+    .header .direita li{
+        margin: 2.5%;
+    }
+
+    .footer{
+        height: 300px;
+    }
+
+    .footer section{
+        margin: 5px;
+        font-size: 0.7em;
+    }
+
+    .footer ul{
+        display: flex;
+        float: none;
+        width: 80%;
+        margin-top: 15px;
+        font-size: 1em;
+    }
+
+    .logo{
+        width: 75px;
+        height: 75px;
+    }
+    
+}

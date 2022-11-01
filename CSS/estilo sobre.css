@@ -1,0 +1,154 @@
+.main{
+    width: 70%;
+    height: 600px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'text1 text2'
+    'text1 image'
+    'text1 text3';
+}
+
+.footer{
+    position: unset;
+}
+
+/* Grid-area */
+.text1-column1{
+    grid-area: text1;
+}
+
+.text2-column2{
+    grid-area: text2;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #835a39;
+}
+
+.imagem{
+    grid-area: image;
+    filter: sepia(20%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #835a39;
+}
+
+.text3-column2{
+    grid-area: text3;
+    padding-top: 20px;
+}
+
+/* Coluna 1*/
+.main h1{
+    font-size: 3.3em;
+    width: 300px;
+    color: #3a2017;
+    margin-bottom: 40px;
+}
+
+.main .text1-column1 p{
+    font-size: 1em;
+    margin-bottom: 25px;
+}
+
+.main .text1-column1 button{
+    background: #d7d5d6;
+    margin-top: 25px;
+    width: 250px;
+    max-width: 90%;
+    height: 40px;
+    border: 1px solid #3a2017;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.main .text1-column1 button:hover{
+    text-decoration: underline;
+    background: #d1d1d1dc;
+}
+
+/* Coluna 2*/
+.imagem img{
+    width: 150px;
+}
+
+.imagem p{
+    font-size: 0.75em;
+    font-weight: 555;
+}
+
+/* Diminuir fonte titulo*/
+
+@media(max-width: 990px){
+    .main h1{
+        font-size: 3.3em;
+    }
+
+    .main .imagem p{
+        font-size: 0.725em;
+    }
+    .main{
+        margin-bottom: 100px;
+    }
+}
+
+/* Tablet */
+
+@media(max-width: 850px){
+    .main{
+        height: 1050px;
+        display: block;
+    }
+
+    .main h1{
+        font-size: 3.20em;
+    }
+
+    .main p{
+        font-size: 0.975em;
+    }
+    .main .text1-column1 p{
+        font-size: 0.95em;
+    }
+
+    .text2-column2{
+        margin-top: 75px;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+
+    .imagem img{
+        margin: 0 auto;
+    }
+}
+
+/* Celular */
+
+@media(max-width: 450px){
+    .main{
+        height: 1200px;
+    }
+}
+
+@media(max-width: 350px){
+    .main{
+        height: 1175px;
+    }
+
+    .main h1{
+        font-size: 2.25em;
+        width: 200px;
+    }
+
+    .main p{
+        font-size: 0.90em;
+    }
+    .main .text1-column1 button{
+        width: 200px;
+    }
+}

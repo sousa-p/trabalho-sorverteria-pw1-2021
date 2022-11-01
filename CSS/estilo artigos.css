@@ -1,0 +1,127 @@
+/* MAIN */
+
+.main{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+/* Artigos  */
+
+.linhas{
+    font-size: 1.25em;
+    font-weight: 555;
+    color: #3a2017;
+    margin-bottom: 5px;
+}
+
+.title-artigo{
+    font-size: 1.05em;
+    font-weight: 555;
+    color: #5f412f;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid #3a2017;
+}
+
+.main .artigos ul li a p:last-child{
+    color: rgb(10, 10, 10);
+    margin: 10px 5px 5px 5px;
+    padding-top: 10px;
+    border-top: 1px solid #3a2017;
+}
+
+.main .artigos ul li a p{
+    text-align: center;
+}
+
+.main .artigos ul{
+    display: flex;
+    position: relative;
+    padding-bottom: 75px;
+    padding-top: 40px;
+    border-top: 1px solid #5f412f;
+}
+
+.main .artigos ul li{
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s linear;
+    width: 400px;
+    padding: 5px;
+}
+
+.main .artigos #artigo-2{
+    padding-bottom: 0;
+}
+
+.main .artigos ul li img{
+    width: 400px;
+    height: 275px;
+    margin: 0 auto;
+}
+
+.main .artigos ul li{
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.main .artigos ul li:hover{
+    background-color: #c0c0c066;
+    filter: brightness(90%);
+}
+
+.main .artigos img{
+    filter: sepia(30%);
+    height: 265px;
+}
+
+/* Tablet */
+@media(max-width: 1200px){
+    .main .artigos ul li{
+        width: 270px;
+    }
+
+    .main .artigos ul li img{
+        width: 270px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 830px){
+    .linhas{
+        text-align: center;
+    }
+
+    .main .artigos ul{
+        display: block;
+    }
+
+    .main .artigos ul li{
+        margin: 0 auto 50px auto;
+        min-width: 240px;
+    }
+
+    .main .artigos ul li:first-child{
+        margin: 0 auto 50px auto;
+    }
+
+    .main .artigos ul li:last-child{
+        margin: 0 auto;
+    }
+}
+
+/* Celular */
+@media (max-width: 350px){
+    .main .artigos ul li{
+        margin: 0;
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .main .artigos ul li a img{
+        height: 100%;
+        width: 100%;
+    }
+}

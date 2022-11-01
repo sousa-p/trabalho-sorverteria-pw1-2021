@@ -1,0 +1,283 @@
+/* MAIN */
+
+.main{
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+}
+
+.main img{
+    filter: sepia(20%);
+    padding-left: 20px;
+}
+
+/* Produtos  */
+.main .itens{
+    border: 20px solid #d7d5d6;
+}
+
+.itens ul li{
+    padding-top: 45px;
+    border-bottom: 1px solid #835A39;
+}
+
+.main .itens ul li a{
+    padding-left: 25px;
+    color: #000
+}
+
+.main ul li button{
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    background: #d7d5d6;
+    position: relative;
+    right: 5%;
+}
+
+.main .itens ul li button ion-icon{
+    color: #44261c;
+    font-size: 1.25em;
+    transition: all 0.3s linear;
+}
+
+.main ul li button ion-icon:hover{
+    color: #160d10;
+}
+
+.main .itens ul li a #container-text section{
+    display: flex;
+}
+
+.main .itens span{
+    font-weight: 555;
+    font-size: 1.25em;
+    margin-right: 20px;
+    margin-left: 25px;
+    color: #3a2017;
+}
+
+main .itens section{
+    padding-bottom: 35px;
+}
+
+main .itens section:last-child{
+    padding: 0;
+    font-size: 1em;
+}
+
+.main .itens p{
+    font-size: 1.05em;
+}
+
+.main .itens ul li a img{
+    width: 120px;
+    height: 170px;
+    float: left;
+}
+
+.quantidade{
+    position: relative;
+    bottom: 50px;
+    right: 20px;
+    width: 25px;
+    margin-left: 95%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+
+}
+
+.quantidade p{
+    text-align: center;
+}
+
+.quantidade p::before{
+    content: "+";
+    font-weight: 555;
+    font-size: 1.125em;
+    display: block;
+}
+
+.quantidade p::after{
+    content: "-";
+    font-weight: 555;
+    font-size: 1.125em;
+    display: block;
+}
+
+/* Rodapé Carrinho */
+#continuar{
+    height: 275px;
+    margin-top: 10px;
+}
+
+#continuar #container{
+    margin: 0 50px;
+    width: 40%;
+    float: right;
+}
+
+#continuar #container p{
+    font-size: 1.125em;
+    margin-bottom: 25px;
+    color: #835A39;
+    font-weight: 555;
+}
+
+#continuar #container #lugar-envio{
+    font-size: 1.02em;
+}
+
+#continuar #container-total{
+    display: inline-block;
+    width: 100%;
+}
+
+#continuar #container-total p{
+    color: #44261c;
+}
+
+#continuar #container-total span{
+    float: right;
+    font-size: 1.175em;
+}
+
+#continuar #container hr{
+    border: 1px dashed #835A39;
+    color: #d7d5d6;
+}
+#continuar #container #comprar-mais{
+    margin-top: 25px;
+    border: 1px solid #3a2017;
+    padding: 5px;
+    font-size: 1.25em;
+    color: #3a2017;
+    transition: all 0.3s linear;
+    width: 165px;
+    text-align: center;
+}
+
+#continuar #container #comprar-mais:hover{
+    text-decoration: underline;
+    background: #d1d1d1dc;
+}
+
+/* Tablet e Celular */
+@media(max-width: 950px){
+    .main .itens ul li a img{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .main .itens ul li a{
+        padding: 0;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        display: block;
+    }
+
+    main .itens section{
+        width: 100%;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .main .itens section span{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .main .itens section p{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #835A39;
+    }
+
+    .main .itens section:last-child{
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+    #continuar #container #comprar-mais{
+        font-size: 1.2em;
+    }
+
+    .quantidade{
+        bottom: 0;
+        right: 0;
+        float: none;
+        width: 80px;
+        margin: 45px auto 45px auto;
+    }
+
+    .quantidade p::after, .quantidade p::before{
+        display: inline-block;
+        font-size: 1.25em;
+    }
+
+    .quantidade p::after{
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    .quantidade p::before{
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+
+    /* Compra rodapé */
+    #continuar{
+        height: 300px;
+    }
+    #continuar #container{
+        float: none;
+        width: auto;
+        margin: 0 20px;
+    }
+
+    #continuar #container #comprar-mais{
+        margin: 25px auto;
+        max-width: 100%;
+    }
+}
+
+/* Carrinho Rodapé Celular  */
+@media(max-width: 350px){
+    #continuar{
+        height: 375px;
+    }
+
+    #continuar #container #comprar-mais{
+        max-width: 90%;
+        font-size: 1em;
+    }
+
+    #container #container-total{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #container #container-total span{
+        float: none;
+        margin-bottom: 25px;
+    }
+
+    #container #container-total p{
+        margin: 0;
+    }
+
+    
+    .main ul li button{
+        bottom: 20px;
+    }
+}

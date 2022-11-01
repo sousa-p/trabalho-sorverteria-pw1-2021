@@ -1,0 +1,131 @@
+
+/* MAIN */
+
+.main{
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.main img{
+    filter: sepia(20%);
+}
+
+/* Produtos  */
+.linhas{
+    font-size: 1.3em;
+    font-weight: 555;
+    color: #3a2017;
+    margin-bottom: 5px;
+}
+
+#linha2{
+    margin-top: 90px;
+}
+
+.produtos ul{
+    padding-top: 50px;
+    border-top: 1px solid #835a39;
+    flex-wrap: wrap;
+}
+
+.produtos ul li a img{
+    width: 150px;
+    height: 200px;
+}
+
+.produtos ul li{
+    width: 150px;
+    margin: 0 auto 60px auto;
+    padding: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+}
+
+
+.produtos ul li, .produtos ul{
+    display: flex;
+}
+
+.produtos ul li:hover{
+    background-color: #c0c0c066;
+    filter: brightness(90%);
+}
+
+.produtos ul li a{
+    color: #3a2017;
+    display: inline-block;
+}
+
+.produtos ul li a img{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #7259449d;
+}
+
+.produtos ul li a .preco{
+    position: relative;
+    left: 70px;
+    bottom: 25px;
+    font-weight: 555;
+}
+
+.produtos ul li a #nome{
+    font-weight: 555;
+    font-size: 1.05em;
+    padding-bottom: 10px;
+}
+
+.produtos ul li a p{
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+}
+
+.produtos ul li a #descricao{
+    font-size: 0.75em;
+}
+
+.comprar-carrinho{
+    text-align: center;
+    font-size: 1.125em;
+    padding-top: 5px;
+    border-top: 1px solid #7259449d;
+}
+
+
+/* Tablet */
+@media(max-width: 830px){
+    .linhas{
+        text-align: center;
+    }
+
+    .produtos ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .produtos ul li:first-child{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .produtos ul li ion-icon{
+        margin-bottom: 0;
+    }
+
+    .produtos ul li{
+        margin-bottom: 30px;
+    }
+
+    .produtos ul li:last-child .comprar-carrinho{
+        height: auto;
+    }
+
+
+    .content p{
+        text-align: center;
+    }
+}

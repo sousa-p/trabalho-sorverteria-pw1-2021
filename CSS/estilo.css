@@ -1,0 +1,154 @@
+/*
+O recurso filter: sepia(), foi usado.
+
+Este recurso serve para você passar um numero entre os colchetes, quanto maior o número, mais filtro(sepia) é adicionado, quanto menor, menos filtro(sepia) é adicionado 
+
+*/
+
+/* MAIN */
+
+.main{
+    width: 57.5%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.painel{
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #7259449d;
+}
+
+.painel img{
+    width: 100%;
+}
+
+section .produtos ul a img{
+    width: 150px;
+    height: 200px;
+}
+
+/* Produtos */
+
+.content{
+    padding-top: 60px;
+}
+
+.content img{
+    filter: sepia(20%);
+}
+
+#conheca{
+    font-size: 1.35em;
+    font-weight: 555;
+    color: #3a2017;
+}
+
+.content p{
+    font-size: 1.05em;
+    padding-top: 10px
+}
+
+
+.content .produtos ul{
+    position: relative;
+    top: 50px;
+    display: flex;
+}
+
+.content .produtos ul li{
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+}
+
+.content .produtos ul li:hover{
+    background-color: #c0c0c066;
+    filter: brightness(90%);
+}
+
+.content .produtos ul li:first-child{
+    margin-left: 0;
+}
+
+.content .produtos ul li:last-child{
+    margin-right: 0;
+}
+
+.content .produtos ul li a{
+    color: #3a2017;
+    display: inline-block;
+}
+
+.content .produtos ul li a img{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #7259449d;
+}
+
+.content .produtos ul li a #nome{
+    font-weight: 555;
+    padding-top: 20px;
+}
+
+.content .produtos ul li a p{
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+}
+
+.content .produtos ul li a #descricao{
+    font-size: 0.75em;
+}
+
+.content #saiba-mais{
+    position: relative;
+    height: 40px;
+    width: 150px;
+    background-color: #d7d5d6;
+    border: none;
+    border-top: 1px solid #835a39;
+    cursor: pointer;
+    color: #3a2017;
+    font-weight: 600;
+}
+
+/* Tablet */
+@media(max-width: 830px){
+
+    .content .produtos ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content .produtos ul li:first-child{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .content .produtos ul li:last-child{
+        margin: 0 auto;
+    }
+
+    .content .produtos ul li{
+        margin-bottom: 30px;
+    }
+
+    .content p{
+        text-align: center;
+    }
+}
+
+/* Celular */
+@media (max-width: 350px){
+    .main .artigo ul li a p{
+        overflow: hidden;
+    }
+
+    .main .painel img{
+        min-width: 150px;
+    }
+}
